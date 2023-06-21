@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import Navbar from '../components/navbar'
+import Sidebar from '../components/sidebar'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
                      bg-gradient-to-tr p-4 from-slate-300 to-blue-500
                      dark:bg-gradient-to-tr dark:from-slate-900 dark:to-blue-500">
     <Navbar/>
+    <Sidebar/>
     <div className="h-3/5 p-5 max-md:p-6 mx-auto my-auto w-full flex flex-col justify-between">
         <h1 className='text-7xl font-bold font-sans text-center dark:text-white max-sm:text-5xl'>Dita Website</h1>
         <h1 className='text-2xl font-bold font-sans text-center max-sm:text-md dark:text-white'>Coming Soon</h1>

@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import useDarkMode from '../../hooks/useDarkMode'
 import { Switch } from "@headlessui/react"
+import { MagnifyingGlassIcon, MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 
 export default function Navbar() {
   return (
@@ -23,10 +24,13 @@ export const Toggle = () => {
       <Switch
         checked={isDarkMode}
         onChange={toggleDarkMode}
-        className={`${isDarkMode ? 'bg-blue-900' : 'bg-blue-500'
-          } relative inline-flex h-6 w-11 items-center rounded-full drop-shadow-md transition-all ease-in-out duration-300`}
+        className={`${isDarkMode ? 'bg-slate-950' : 'bg-slate-950'
+          } relative inline-flex h-6 w-12 items-center rounded-full drop-shadow-md transition-all ease-in-out duration-300`}
       >
-        
+      <MoonIcon className='w-4 h-4 text-slate-300 translate-x-1'/>
+      <SunIcon className='w-4 h-4 text-yellow-400 translate-x-2'/>  
+      <span className={`${isDarkMode ? 'translate-x-6 bg-white' : 'translate-x-1 bg-white'} 
+                        absolute drop-shadow-md w-4 h-4 rounded-full transition-all delay-200`}/>    
       </Switch>
     </Switch.Group>
   );
@@ -38,8 +42,8 @@ export const Search = () => {
   return (
     <div className="flex flex-row justify-center items-center">
       <input
-        className='rounded-md py-3 px-4 w-32 text-black dark:text-white leading-tight 
-                  focus:outline-1 focus:w-40 bg-slate-200 dark:bg-slate-900 focus:bg-white 
+        className='rounded-l-md py-3 px-4 w-24 text-black text-center dark:text-white leading-tight 
+                  focus:outline-1 focus:w-40 bg-slate-200 dark:bg-slate-900 focus:bg-white dark:focus:text-black
                   dark:focus:bg-white max-md:focus:w-64
                   drop-shadow-md transition-all ease-in-out duration-200'
         id="search"
@@ -48,6 +52,9 @@ export const Search = () => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      </div>
+      <button className='bg-slate-200 dark:bg-slate-900 hover:bg-slate-700 drop-shadow-md dark:text-white font-bold py-3 px-4 rounded-r-md'>
+       <MagnifyingGlassIcon className='w-5 h-5 text-black dark:text-white'/>
+      </button>
+    </div>
   );
 };
