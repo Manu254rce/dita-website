@@ -2,6 +2,7 @@
 import React from 'react'
 import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
+import Chatbot from '../components/chatbot'
 
 const Home = () => {
   return (
@@ -11,16 +12,10 @@ const Home = () => {
     <Navbar/>
     <Sidebar/>
     <div className="h-3/5 p-5 max-md:p-6 mx-auto my-auto w-full flex flex-col justify-between">
-        <h1 className='text-7xl font-bold font-sans text-center dark:text-white max-sm:text-5xl'>Dita Website</h1>
-        <h1 className='text-2xl font-bold font-sans text-center max-sm:text-md dark:text-white'>Coming Soon</h1>
-        <h1 className='text-md max-sm:text-sm font-sans text-center dark:text-white'>
-            To edit this page, go to <code className='text-md max-sm:text-sm text-center dark:text-white'>dita-website\src\pages\home\home.jsx</code> 
-        </h1>
+        <h1 className='text-7xl font-bold font-sans ml-20 my-auto dark:text-white max-sm:text-5xl max-sm:mx-auto'>DITA WEBSITE</h1>
     </div>
-    <h1 className='text-sm text-center mb-16 dark:text-white'>Open from 
-       <a href='https://github.com/dita-daystaruni/dita-website'
-       className='text-green-600'> Github</a></h1>
-    <h1 className="dark:text-white max-sm:text-sm">Copyright 2023</h1>
+    <h1 className="dark:text-white max-sm:text-sm text-center">Copyright 2023</h1>
+    <Chatbot/>
     </main>
   )
 }

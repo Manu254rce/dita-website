@@ -14,18 +14,19 @@ export default function Sidebar() {
 export const Contents = () => {
     return (
         <div className='flex flex-col justify-evenly items-center h-full'>
-        <div className='h-full flex flex-col max-sm:flex-row max-sm:w-full justify-evenly items-center'>
-            <h1 className='text-md -rotate-90 font-bold
+        <div className='h-full flex flex-col max-sm:flex-row max-sm:w-full 
+                        justify-around items-center'>
+            <h1 className='text-xs -rotate-90 font-bold hover:underline hover:underline-offset-4
                          text-black dark:text-white max-sm:rotate-0'>WELCOME</h1>
-            <h1 className='text-md -rotate-90 font-bold
+            <h1 className='text-xs -rotate-90 font-bold hover:underline hover:underline-offset-4
                          text-black dark:text-white max-sm:rotate-0'>ABOUT US</h1>
-            <h1 className='text-md -rotate-90 font-bold
+            <h1 className='text-xs -rotate-90 font-bold hover:underline hover:underline-offset-4
                          text-black dark:text-white max-sm:rotate-0'>EVENTS</h1>
-            <h1 className='text-md -rotate-90 font-bold
+            <h1 className='text-xs -rotate-90 font-bold hover:underline hover:underline-offset-4
                          text-black dark:text-white max-sm:rotate-0'>SERVICES</h1>             
-            <h1 className='text-md -rotate-90 font-bold
+            <h1 className='text-xs -rotate-90 font-bold hover:underline hover:underline-offset-4
                          text-black dark:text-white max-sm:rotate-0'>ANNOUNCEMENTS</h1>
-            <h1 className='text-md -rotate-90 font-bold
+            <h1 className='text-xs -rotate-90 font-bold hover:underline hover:underline-offset-4
                          text-black dark:text-white max-sm:rotate-0'>PEOPLE AND PARTNERS</h1>             
         </div>
       </div>

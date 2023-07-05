@@ -2,16 +2,18 @@
 import React, { useState } from 'react'
 import useDarkMode from '../../hooks/useDarkMode'
 import { Switch } from "@headlessui/react"
-import { MagnifyingGlassIcon, MoonIcon, SunIcon } from '@heroicons/react/24/solid'
+import { Bars3Icon, MagnifyingGlassIcon, MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full h-14 flex flex-row 
+    <nav className="fixed top-0 left-0 w-full h-16 flex flex-row  
                   bg-transparent p-3 my-auto">
-        <div className='w-full flex flex-row justify-end max-md:justify-center'>
-            <Search/>
+        <div className='mx-auto w-full h-full max-sm:w-1/2 flex items-end flex-row justify-end space-x-5 max-md:justify-center'>
+          <Search/>
+          <button className='py-3 px-4 rounded-md bg-slate-200 dark:bg-slate-950 flex flex-row items-center'>
+            <Bars3Icon className='w-5 h-5 text-black dark:text-white'/>
+          </button>
         </div>
-        <Toggle/>
     </nav>
   )
 }
@@ -58,3 +60,8 @@ export const Search = () => {
     </div>
   );
 };
+
+export const Dropdown = () => {
+  
+};
+
