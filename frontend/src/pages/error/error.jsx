@@ -9,7 +9,7 @@ function Error() {
         <h1 className='text-8xl max-sm:text-6xl font-bold mx-auto dark:text-white'>404</h1>
         <h1 className='mx-auto text-4xl max-sm:text-2xl dark:text-white'>Page Not Found</h1>
         <button className='mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-            <Link to='/'>Go Home</Link>
+            <Link to='/'>Go Home...</Link>
         </button>
       </div>
     </main>
